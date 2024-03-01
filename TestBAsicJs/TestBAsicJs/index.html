@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add this in the <head> section of your HTML -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div id='main-nav'>
+
+        <h1 style="color: yellow;">Logo</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Categories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+
+
+    <div id="offer-section">
+        <img id="offer-poster" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/83d70974403181.5c2e97fb1f91b.jpg" alt="Special Offer">
+    </div>
+
+  
+    
+
+    <div class="container">
+    
+        <div class="product-box" onclick="showDetails('Laptop', 'Powerful laptop with high-performance features. 16GB RAM, 512GB SSD, Intel i7 processor.', '₹1200', 'https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_640.jpg')">
+            <img class="product-img" src="https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_640.jpg" alt="Laptop">
+            <div class="product-details"> 
+                <h3>Laptop</h3>
+                <p>Powerful laptop with high-performance features. 16GB RAM, 512GB SSD, Intel i7 processor.</p>
+                <p>₹1200</p>
+            </div>
+        </div>
+       
+        
+   
+        <div class="product-box" onclick="showDetails('Smartphone', 'High-quality smartphone with the latest features and powerful camera.', '₹800', 'https://cdn.pixabay.com/photo/2016/11/20/08/33/camera-1842202_640.jpg')">
+            <img class="product-img" src="https://cdn.pixabay.com/photo/2016/11/20/08/33/camera-1842202_640.jpg" alt="Smartphone">
+            <div class="product-details">
+                <h3>Smartphone</h3>
+                <p>High-quality smartphone with the latest features and powerful camera.</p>
+                <p>₹800</p>
+            </div>
+        </div>
+
+        <div class="product-box" onclick="showDetails('Gaming Joystick', 'High-performance gaming joystick with customizable buttons and ergonomic design.', '₹70', 'https://cdn.pixabay.com/photo/2020/05/02/07/32/gaming-5120169_640.jpg')">
+            <img class="product-img" src="https://cdn.pixabay.com/photo/2020/05/02/07/32/gaming-5120169_640.jpg" alt="Gaming Joystick">
+            <div class="product-details">
+                <h3>Gaming Joystick</h3>
+                <p>High-performance gaming joystick with customizable buttons and ergonomic design.</p>
+                <p>₹70</p>
+            </div>
+        </div>
+        
+        <div class="product-box" onclick="showDetails('Mechanical Keyboard', 'RGB backlit mechanical keyboard with tactile switches for a responsive typing experience.', '₹90', 'https://cdn.pixabay.com/photo/2016/11/29/11/39/computer-1869236_640.jpg')">
+            <img class="product-img" src="https://cdn.pixabay.com/photo/2016/11/29/11/39/computer-1869236_640.jpg" alt="Mechanical Keyboard">
+            <div class="product-details">
+                <h3>Mechanical Keyboard</h3>
+                <p>RGB backlit mechanical keyboard with tactile switches for a responsive typing experience.</p>
+                <p>₹90</p>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="product-box" onclick="showDetails('Wireless Headphones', 'Premium wireless headphones with noise cancellation and high-fidelity sound.', '₹1500', 'https://cdn.pixabay.com/photo/2018/09/17/14/27/headphones-3683983_1280.jpg')">
+            <img class="product-img" src="https://cdn.pixabay.com/photo/2018/09/17/14/27/headphones-3683983_1280.jpg" alt="Wireless Headphones">
+            <div class="product-details">
+                <h3>Wireless Headphones</h3>
+                <p>Premium wireless headphones with noise cancellation and high-fidelity sound.</p>
+                <p>₹1500</p>
+            </div>
+        </div>
+        
+        <div class="product-box" onclick="showDetails('Smartwatch', 'Smartwatch with health tracking features and customizable watch faces.', '₹1200', 'https://cdn.pixabay.com/photo/2015/06/25/17/21/smart-watch-821557_1280.jpg')">
+            <img class="product-img" src="https://cdn.pixabay.com/photo/2015/06/25/17/21/smart-watch-821557_1280.jpg" alt="Smartwatch">
+            <div class="product-details">
+                <h3>Smartwatch</h3>
+                <p>Smartwatch with health tracking features and customizable watch faces.</p>
+                <p>₹1200</p>
+            </div>
+        </div>
+        
+        <div class="product-box" onclick="showDetails('Bluetooth Speaker', 'Portable Bluetooth speaker with powerful sound and long battery life.', '₹800', 'https://cdn.pixabay.com/photo/2021/07/27/15/16/speaker-6497177_640.jpg')">
+            <img class="product-img" src="https://cdn.pixabay.com/photo/2021/07/27/15/16/speaker-6497177_640.jpg" alt="Bluetooth Speaker">
+            <div class="product-details">
+                <h3>Bluetooth Speaker</h3>
+                <p>Portable Bluetooth speaker with powerful sound and long battery life.</p>
+                <p>₹800</p>
+            </div>
+        </div>
+        
+        <div class="product-box" onclick="showDetails('External Hard Drive', 'High-capacity external hard drive for secure data storage and backup.', '₹2000', 'https://cdn.pixabay.com/photo/2019/12/16/17/29/hard-drive-4699797_640.jpg')">
+            <img class="product-img" src="https://cdn.pixabay.com/photo/2019/12/16/17/29/hard-drive-4699797_640.jpg" alt="External Hard Drive">
+            <div class="product-details">
+                <h3>External Hard Drive</h3>
+                <p>High-capacity external hard drive for secure data storage and backup.</p>
+                <p>₹2000</p>
+            </div>
+        </div>
+
+
+
+        <!-- Overlay Popup -->
+        <div class="overlay" id="overlay">
+            <div class="popup">
+                <span class="close-btn" onclick="hideDetails()">&times;</span>
+                <img class="product-popup-img" id="product-popup-img" src="" alt="Product Image">
+                <h2 id="product-title"></h2>
+                <p id="product-description"></p>
+                <p id="product-price"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <form onsubmit="handleSubmitBit(event)" id="contact" ><br><br>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" /><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" /><br><br>
+
+        <label for="phone">Phone No</label>
+        <input type="tel" name="phone" id="phone" /><br><br>
+
+        <button type="submit">Submit</button>
+
+      </form>
+
+
+      <footer id="footer">&copy; 2024 E-Commerce Store. All Rights Reserved.</footer>
+    <script src="app.js"></script>
+</body>
+</html>

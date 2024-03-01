@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul class="fruits">
+    <li class="fruit">mango</li>
+    <li class="fruit">orange</li>
+    <li class="fruit">kiwi</li>
+    <li class="fruit">banana</li>
+</ul>
+
+    <p id="get">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus explicabo vero repudiandae pariatur omnis enim nesciunt illo blanditiis? Aut consectetur consequatur vero nihil qui inventore libero assumenda sit iste neque.</p>
+    <button onclick=color() style="width: 200px; height: 50px;">color change</button>
+
+    <script>
+       
+
+        function color(){
+            let sentence=document.getElementById('get');
+            sentence.style.color="red";
+            sentence.style.backgroundColor="green"
+
+            let fruitName = document.getElementsByClassName('fruit');
+        for(i=0;i<=fruitName.length;i++){
+            // if(i=2){
+            // fruitName[i].style.color="green";
+            // }
+            // else{
+            // fruitName[i].style.color="red";
+
+            // }
+            fruitName[i].style.color="red";
+        }
+        } 
+
+
+        
+    </script>
+</body>
+</html>
