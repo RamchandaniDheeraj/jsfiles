@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 300px;
+            height: 280px;
+            border: 0.1px solid rgb(149, 146, 146);
+            margin: auto;
+            padding: 10px 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            width: 100%;
+            padding: 8px 0;
+            margin: 8px 0;
+            
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            background-color: greenyellow;
+            margin-left: 35%;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="handleform(event)">
+        <label for="">User Name</label>
+        <input type="text" id="UserName"> 
+        <label for="">E-mail</label>
+        <input type="text" id="email">
+         <label for="">Phone</label>
+        <input type="text" id="Phone">
+        <button>Submit</button>
+    </form>
+
+    <ul id="listItem">
+       
+    </ul>
+
+
+    <script>
+        function handleform(event){
+            event.preventDefault(event);
+          let name =  event.target.UserName.value
+          let email =  event.target.email.value
+          let Phone =  event.target.Phone.value
+       
+        let obj={
+            user:UserName,
+            email:email,
+            Phone:Phone
+        }
+        localStorage.setItem(obj.email,JSON.stringify(obj))
+        showUserDetailsOnScreen(obj)
+        function  showUserDetailsOnScreen(obj){
+            const parentElem = document.getElementById('listItem')
+            parentElem.innerHTML +=`<li> ${obj.UserName }  |  ${obj.email} |  ${obj.Phone}</li>`
+            } }
+    </script>
+</body>
+</html>
