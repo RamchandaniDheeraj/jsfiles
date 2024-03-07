@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <button id="btn">click here</button>
+    <h1 id="text"></h1>
+    <script>
+        var text = document.getElementById('text')
+        var btn=document.getElementById('btn') 
+           btn.addEventListener('click',function(){
+            // method 1
+            //   document.body.innerHTML +="<h1>hii</h1>"
+
+            // method 2
+            // text.textContent="hii"
+
+            // method 3
+        let newtext=document.createElement('h1')
+           input= document.querySelector('#input')
+           newtext.textContent="hello world";
+             document.body.appendChild(newtext); 
+             
+             ////theme
+             document.body.style.backgroundColor="red" 
+             text =document.body.style
+             text.color="white"
+           })
+          
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="black">black</button>
+    <button id="green">green</button>
+    <button id="red">red</button>
+    <button id="blue">blue</button>
+    <button id="orange">orenge</button>
+    <div id="theme" style="font-size: 150px;color: black;text-align: center;margin-top: 100px;">THEME</div>
+
+    <script>
+        black=document.getElementById('black')
+        theme=document.getElementById('theme')
+
+        black.addEventListener('click',function () {
+            document.body.style.backgroundColor='black'
+            theme.style.color="white"
+        })
+        
+
+        green=document.getElementById('green')
+        green.addEventListener('click',function () {
+            document.body.style.backgroundColor='green'
+            theme.style.color="blue"
+
+        })
+        red=document.getElementById('red')
+        red.addEventListener('click',function () {
+            document.body.style.backgroundColor='red'
+            theme.style.color="yellow"
+
+        })
+        blue=document.getElementById('blue')
+        blue.addEventListener('click',function () {
+            document.body.style.backgroundColor='blue'
+            theme.style.color="orange"
+
+        })
+        orange=document.getElementById('orange')
+        orange.addEventListener('click',function () {
+            document.body.style.backgroundColor='orange'
+            theme.style.color="white"
+
+        })
+    </script>
+</body>
+</html>

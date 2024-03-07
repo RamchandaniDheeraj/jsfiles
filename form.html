@@ -50,21 +50,42 @@
     <script>
         function handleform(event){
             event.preventDefault(event);
-          let name =  event.target.UserName.value
+          let user =  event.target.UserName.value
           let email =  event.target.email.value
           let Phone =  event.target.Phone.value
        
         let obj={
-            user:UserName,
+            user:user,
             email:email,
             Phone:Phone
         }
-        localStorage.setItem(obj.email,JSON.stringify(obj))
+        localStorage.setItem(obj.user,JSON.stringify(obj))
         showUserDetailsOnScreen(obj)
+    }
         function  showUserDetailsOnScreen(obj){
             const parentElem = document.getElementById('listItem')
-            parentElem.innerHTML +=`<li> ${obj.UserName }  |  ${obj.email} |  ${obj.Phone}</li>`
-            } }
+            
+            ///// methode 1
+            // parentElem.innerHTML +=`<li> ${obj.user }  |  ${obj.email} |  ${obj.Phone}</li>`
+
+            ///// methode 2
+            let content = document.createElement('li');
+            content.textContent=`${obj.user }  |  ${obj.email} |  ${obj.Phone} `;
+            parentElem.appendChild(content);
+
+            let btn=document.createElement('button');
+            btn.textContent="Delete"
+            content.appendChild(btn);
+
+            btn.onclick=()=>{
+                parentElem.removeChild(content)
+                localStorage.removeItem(obj.user)
+            }
+            } 
+            
+
+          
+            
     </script>
 </body>
 </html>
